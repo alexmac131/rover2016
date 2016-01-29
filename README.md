@@ -44,6 +44,6 @@ https://www.sparkfun.com/pages/xbee_guide
 
 
 ##LIDAR##
-![][https://github.com/alexmac131/rover2016/tree/master/images/LIDARMIRRORS.jpg]
+[Lidar][https://github.com/alexmac131/rover2016/tree/master/images/LIDARMIRRORS.jpg]
 
 https://github.com/alexmac131/rover2016/tree/master/images
