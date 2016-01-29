@@ -2,6 +2,12 @@
 
 by Alex Mackinnon
 
+##About the project:##
+I have been working with Arduino as a hobby for a few years now and wanted to something different and build something that starts to take the hardware and code to its very edge. 
+
+This is basically version 3 with new physical hardware, new code and the introduction of I2C and multi-unit control boards. Intentionally mixing different classes of Arduino boards, raspberry pi 1 & 2, particle IO boards and others.
+
+
 
 
 ##License:##
