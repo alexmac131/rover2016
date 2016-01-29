@@ -1,0 +1,463 @@
+0 info it worked if it ends with ok
+1 verbose cli [ '/usr/local/bin/node',
+1 verbose cli   '/usr/local/bin/npm',
+1 verbose cli   'install',
+1 verbose cli   'roslib' ]
+2 info using npm@2.14.7
+3 info using node@v4.2.3
+4 verbose install initial load of /Users/alexmackinnon/projects/rover2016/control/package.json
+5 verbose readDependencies loading dependencies from /Users/alexmackinnon/projects/rover2016/control/package.json
+6 silly cache add args [ 'roslib', null ]
+7 verbose cache add spec roslib
+8 silly cache add parsed spec Result {
+8 silly cache add   raw: 'roslib',
+8 silly cache add   scope: null,
+8 silly cache add   name: 'roslib',
+8 silly cache add   rawSpec: '',
+8 silly cache add   spec: '*',
+8 silly cache add   type: 'range' }
+9 silly addNamed roslib@*
+10 verbose addNamed "*" is a valid semver range for roslib
+11 silly addNameRange { name: 'roslib', range: '*', hasData: false }
+12 silly mapToRegistry name roslib
+13 silly mapToRegistry using default registry
+14 silly mapToRegistry registry https://registry.npmjs.org/
+15 silly mapToRegistry uri https://registry.npmjs.org/roslib
+16 verbose addNameRange registry:https://registry.npmjs.org/roslib not in flight; fetching
+17 verbose request uri https://registry.npmjs.org/roslib
+18 verbose request no auth needed
+19 info attempt registry request try #1 at 9:04:17 PM
+20 verbose request id fe2e4d58ca2b6bbc
+21 verbose etag "DJCBOP9T5HUV2CSL4NENH6ZT4"
+22 http request GET https://registry.npmjs.org/roslib
+23 http 304 https://registry.npmjs.org/roslib
+24 verbose headers { date: 'Tue, 19 Jan 2016 02:04:17 GMT',
+24 verbose headers   via: '1.1 varnish',
+24 verbose headers   'cache-control': 'max-age=300',
+24 verbose headers   etag: '"DJCBOP9T5HUV2CSL4NENH6ZT4"',
+24 verbose headers   age: '43',
+24 verbose headers   connection: 'keep-alive',
+24 verbose headers   'x-served-by': 'cache-jfk1030-JFK',
+24 verbose headers   'x-cache': 'HIT',
+24 verbose headers   'x-cache-hits': '1',
+24 verbose headers   'x-timer': 'S1453169057.717326,VS0,VE0',
+24 verbose headers   vary: 'Accept' }
+25 silly get cb [ 304,
+25 silly get   { date: 'Tue, 19 Jan 2016 02:04:17 GMT',
+25 silly get     via: '1.1 varnish',
+25 silly get     'cache-control': 'max-age=300',
+25 silly get     etag: '"DJCBOP9T5HUV2CSL4NENH6ZT4"',
+25 silly get     age: '43',
+25 silly get     connection: 'keep-alive',
+25 silly get     'x-served-by': 'cache-jfk1030-JFK',
+25 silly get     'x-cache': 'HIT',
+25 silly get     'x-cache-hits': '1',
+25 silly get     'x-timer': 'S1453169057.717326,VS0,VE0',
+25 silly get     vary: 'Accept' } ]
+26 verbose etag https://registry.npmjs.org/roslib from cache
+27 verbose get saving roslib to /Users/alexmackinnon/.npm/registry.npmjs.org/roslib/.cache.json
+28 silly addNameRange number 2 { name: 'roslib', range: '*', hasData: true }
+29 silly addNameRange versions [ 'roslib',
+29 silly addNameRange   [ '0.7.0',
+29 silly addNameRange     '0.7.1',
+29 silly addNameRange     '0.8.0',
+29 silly addNameRange     '0.8.1',
+29 silly addNameRange     '0.8.2',
+29 silly addNameRange     '0.8.3',
+29 silly addNameRange     '0.9.0',
+29 silly addNameRange     '0.9.1',
+29 silly addNameRange     '0.10.0',
+29 silly addNameRange     '0.12.0',
+29 silly addNameRange     '0.13.0',
+29 silly addNameRange     '0.15.0',
+29 silly addNameRange     '0.17.0' ] ]
+30 silly addNamed roslib@0.17.0
+31 verbose addNamed "0.17.0" is a plain semver version for roslib
+32 silly cache afterAdd roslib@0.17.0
+33 verbose afterAdd /Users/alexmackinnon/.npm/roslib/0.17.0/package/package.json not in flight; writing
+34 verbose afterAdd /Users/alexmackinnon/.npm/roslib/0.17.0/package/package.json written
+35 silly install resolved [ { name: 'roslib',
+35 silly install resolved     homepage: 'https://www.robotwebtools.org',
+35 silly install resolved     description: 'The standard ROS Javascript Library',
+35 silly install resolved     version: '0.17.0',
+35 silly install resolved     license: 'BSD',
+35 silly install resolved     main: './src/RosLibNode.js',
+35 silly install resolved     browser: './src/RosLib.js',
+35 silly install resolved     devDependencies:
+35 silly install resolved      { grunt: '~0.4.1',
+35 silly install resolved        'grunt-browserify': '^3.0.1',
+35 silly install resolved        'grunt-contrib-clean': '~0.4.0',
+35 silly install resolved        'grunt-contrib-jshint': '^0.10.0',
+35 silly install resolved        'grunt-contrib-uglify': '~0.2.0',
+35 silly install resolved        'grunt-contrib-watch': '~0.3.1',
+35 silly install resolved        'grunt-jsdoc': '~0.6.0',
+35 silly install resolved        'grunt-karma': '^0.12.0',
+35 silly install resolved        'grunt-mocha-test': '^0.11.0',
+35 silly install resolved        'karma-chai': '^0.1.0',
+35 silly install resolved        'karma-firefox-launcher': '~0.1.3',
+35 silly install resolved        'karma-mocha': '^0.1.9',
+35 silly install resolved        'load-grunt-tasks': '^0.6.0',
+35 silly install resolved        'time-grunt': '^1.0.0' },
+35 silly install resolved     dependencies:
+35 silly install resolved      { 'aliasify-patch': '^1.4.1',
+35 silly install resolved        canvas: '~1.2.8',
+35 silly install resolved        eventemitter2: '~0.4.13',
+35 silly install resolved        'object-assign': '^2.0.0',
+35 silly install resolved        ws: '^0.4.32',
+35 silly install resolved        xmldom: '^0.1.19' },
+35 silly install resolved     browserify: { transform: [Object] },
+35 silly install resolved     aliasify: { aliases: [Object] },
+35 silly install resolved     directories: { example: 'examples', test: 'test' },
+35 silly install resolved     engines: { node: '>=0.10' },
+35 silly install resolved     scripts:
+35 silly install resolved      { test: 'grunt test',
+35 silly install resolved        'test-examples': 'grunt mochaTest:examples && karma start test/examples/karma.conf.js',
+35 silly install resolved        'test-tcp': 'grunt mochaTest:tcp',
+35 silly install resolved        publish: 'grunt build',
+35 silly install resolved        preinstall: 'sh misc/check.sh' },
+35 silly install resolved     repository:
+35 silly install resolved      { type: 'git',
+35 silly install resolved        url: 'https://github.com/RobotWebTools/roslibjs/releases' },
+35 silly install resolved     bugs: { url: 'https://github.com/RobotWebTools/roslibjs/issues' },
+35 silly install resolved     keywords: [ 'ROS', 'ros', 'roslib', 'roslibjs', 'robot' ],
+35 silly install resolved     author:
+35 silly install resolved      { name: 'Robot Webtools Team',
+35 silly install resolved        email: 'robot-web-tools@googlegroups.com',
+35 silly install resolved        url: 'http://robotwebtools.org' },
+35 silly install resolved     gitHead: '3a3f098109551645c51700527ae2f15c40e1cb15',
+35 silly install resolved     _id: 'roslib@0.17.0',
+35 silly install resolved     _shasum: 'e0ceb0ce284e52949210286dbd72abffdc480eb8',
+35 silly install resolved     _from: 'roslib@*',
+35 silly install resolved     _npmVersion: '2.11.3',
+35 silly install resolved     _nodeVersion: '0.12.7',
+35 silly install resolved     _npmUser: { name: 'jihoonl', email: 'jihoonlee.in@gmail.com' },
+35 silly install resolved     maintainers: [ [Object] ],
+35 silly install resolved     dist:
+35 silly install resolved      { shasum: 'e0ceb0ce284e52949210286dbd72abffdc480eb8',
+35 silly install resolved        tarball: 'http://registry.npmjs.org/roslib/-/roslib-0.17.0.tgz' },
+35 silly install resolved     _resolved: 'https://registry.npmjs.org/roslib/-/roslib-0.17.0.tgz',
+35 silly install resolved     readme: 'ERROR: No README data found!' } ]
+36 info install roslib@0.17.0 into /Users/alexmackinnon/projects/rover2016/control
+37 info installOne roslib@0.17.0
+38 verbose installOne of roslib to /Users/alexmackinnon/projects/rover2016/control not in flight; installing
+39 verbose lock using /Users/alexmackinnon/.npm/_locks/roslib-cee9bd94c405ede6.lock for /Users/alexmackinnon/projects/rover2016/control/node_modules/roslib
+40 silly install write writing roslib 0.17.0 to /Users/alexmackinnon/projects/rover2016/control/node_modules/roslib
+41 verbose unbuild node_modules/roslib
+42 silly gentlyRm /Users/alexmackinnon/projects/rover2016/control/node_modules/roslib is being purged from base /Users/alexmackinnon/projects/rover2016/control
+43 verbose gentlyRm don't care about contents; nuking /Users/alexmackinnon/projects/rover2016/control/node_modules/roslib
+44 verbose tar unpack /Users/alexmackinnon/.npm/roslib/0.17.0/package.tgz
+45 verbose tar unpacking to /Users/alexmackinnon/projects/rover2016/control/node_modules/roslib
+46 silly gentlyRm /Users/alexmackinnon/projects/rover2016/control/node_modules/roslib is being purged
+47 verbose gentlyRm don't care about contents; nuking /Users/alexmackinnon/projects/rover2016/control/node_modules/roslib
+48 silly gunzTarPerm modes [ '755', '644' ]
+49 silly gunzTarPerm extractEntry package.json
+50 silly gunzTarPerm modified mode [ 'package.json', 436, 420 ]
+51 silly gunzTarPerm extractEntry .npmignore
+52 silly gunzTarPerm modified mode [ '.npmignore', 436, 420 ]
+53 silly gunzTarPerm extractEntry README.md
+54 silly gunzTarPerm modified mode [ 'README.md', 436, 420 ]
+55 silly gunzTarPerm extractEntry LICENSE
+56 silly gunzTarPerm modified mode [ 'LICENSE', 436, 420 ]
+57 silly gunzTarPerm extractEntry .jshintrc
+58 silly gunzTarPerm modified mode [ '.jshintrc', 436, 420 ]
+59 silly gunzTarPerm extractEntry .npmrc
+60 silly gunzTarPerm modified mode [ '.npmrc', 436, 420 ]
+61 silly gunzTarPerm extractEntry CHANGELOG.md
+62 silly gunzTarPerm modified mode [ 'CHANGELOG.md', 436, 420 ]
+63 silly gunzTarPerm extractEntry doc/global.html#ActionClient
+64 silly gunzTarPerm modified mode [ 'doc/global.html#ActionClient', 436, 420 ]
+65 silly gunzTarPerm extractEntry doc/Goal.html
+66 silly gunzTarPerm modified mode [ 'doc/Goal.html', 436, 420 ]
+67 silly gunzTarPerm extractEntry doc/Quaternion.html
+68 silly gunzTarPerm modified mode [ 'doc/Quaternion.html', 436, 420 ]
+69 silly gunzTarPerm extractEntry doc/Ros.html
+70 silly gunzTarPerm modified mode [ 'doc/Ros.html', 436, 420 ]
+71 silly gunzTarPerm extractEntry doc/RosLib.js.html
+72 silly gunzTarPerm modified mode [ 'doc/RosLib.js.html', 436, 420 ]
+73 silly gunzTarPerm extractEntry doc/RosLibNode.js.html
+74 silly gunzTarPerm modified mode [ 'doc/RosLibNode.js.html', 436, 420 ]
+75 silly gunzTarPerm extractEntry doc/ServiceRequest.html
+76 silly gunzTarPerm modified mode [ 'doc/ServiceRequest.html', 436, 420 ]
+77 silly gunzTarPerm extractEntry doc/SimpleActionServer.html
+78 silly gunzTarPerm modified mode [ 'doc/SimpleActionServer.html', 436, 420 ]
+79 silly gunzTarPerm extractEntry doc/TFClient.html
+80 silly gunzTarPerm modified mode [ 'doc/TFClient.html', 436, 420 ]
+81 silly gunzTarPerm extractEntry doc/Transform.html
+82 silly gunzTarPerm modified mode [ 'doc/Transform.html', 436, 420 ]
+83 silly gunzTarPerm extractEntry doc/UrdfBox.html
+84 silly gunzTarPerm modified mode [ 'doc/UrdfBox.html', 436, 420 ]
+85 silly gunzTarPerm extractEntry doc/UrdfCylinder.html
+86 silly gunzTarPerm modified mode [ 'doc/UrdfCylinder.html', 436, 420 ]
+87 silly gunzTarPerm extractEntry doc/UrdfJoint.html
+88 silly gunzTarPerm modified mode [ 'doc/UrdfJoint.html', 436, 420 ]
+89 silly gunzTarPerm extractEntry doc/UrdfLink.html
+90 silly gunzTarPerm modified mode [ 'doc/UrdfLink.html', 436, 420 ]
+91 silly gunzTarPerm extractEntry doc/UrdfMesh.html
+92 silly gunzTarPerm modified mode [ 'doc/UrdfMesh.html', 436, 420 ]
+93 silly gunzTarPerm extractEntry doc/UrdfModel.html
+94 silly gunzTarPerm modified mode [ 'doc/UrdfModel.html', 436, 420 ]
+95 silly gunzTarPerm extractEntry doc/UrdfSphere.html
+96 silly gunzTarPerm modified mode [ 'doc/UrdfSphere.html', 436, 420 ]
+97 silly gunzTarPerm extractEntry doc/actionlib_ActionClient.js.html
+98 silly gunzTarPerm modified mode [ 'doc/actionlib_ActionClient.js.html', 436, 420 ]
+99 silly gunzTarPerm extractEntry doc/actionlib_Goal.js.html
+100 silly gunzTarPerm modified mode [ 'doc/actionlib_Goal.js.html', 436, 420 ]
+101 silly gunzTarPerm extractEntry doc/actionlib_SimpleActionServer.js.html
+102 silly gunzTarPerm modified mode [ 'doc/actionlib_SimpleActionServer.js.html', 436, 420 ]
+103 silly gunzTarPerm extractEntry doc/core_Message.js.html
+104 silly gunzTarPerm modified mode [ 'doc/core_Message.js.html', 436, 420 ]
+105 silly gunzTarPerm extractEntry doc/core_Param.js.html
+106 silly gunzTarPerm modified mode [ 'doc/core_Param.js.html', 436, 420 ]
+107 silly gunzTarPerm extractEntry doc/core_Ros.js.html
+108 silly gunzTarPerm modified mode [ 'doc/core_Ros.js.html', 436, 420 ]
+109 silly gunzTarPerm extractEntry doc/core_Service.js.html
+110 silly gunzTarPerm modified mode [ 'doc/core_Service.js.html', 436, 420 ]
+111 silly gunzTarPerm extractEntry doc/core_ServiceRequest.js.html
+112 silly gunzTarPerm modified mode [ 'doc/core_ServiceRequest.js.html', 436, 420 ]
+113 silly gunzTarPerm extractEntry doc/core_ServiceResponse.js.html
+114 silly gunzTarPerm modified mode [ 'doc/core_ServiceResponse.js.html', 436, 420 ]
+115 silly gunzTarPerm extractEntry doc/core_SocketAdapter.js.html
+116 silly gunzTarPerm modified mode [ 'doc/core_SocketAdapter.js.html', 436, 420 ]
+117 silly gunzTarPerm extractEntry doc/core_Topic.js.html
+118 silly gunzTarPerm modified mode [ 'doc/core_Topic.js.html', 436, 420 ]
+119 silly gunzTarPerm extractEntry doc/fonts/OpenSans-Light-webfont.eot
+120 silly gunzTarPerm modified mode [ 'doc/fonts/OpenSans-Light-webfont.eot', 436, 420 ]
+121 silly gunzTarPerm extractEntry doc/fonts/OpenSans-Bold-webfont.eot
+122 silly gunzTarPerm modified mode [ 'doc/fonts/OpenSans-Bold-webfont.eot', 436, 420 ]
+123 silly gunzTarPerm extractEntry doc/fonts/OpenSans-Bold-webfont.woff
+124 silly gunzTarPerm modified mode [ 'doc/fonts/OpenSans-Bold-webfont.woff', 436, 420 ]
+125 silly gunzTarPerm extractEntry doc/fonts/OpenSans-BoldItalic-webfont.eot
+126 silly gunzTarPerm modified mode [ 'doc/fonts/OpenSans-BoldItalic-webfont.eot', 436, 420 ]
+127 silly gunzTarPerm extractEntry doc/fonts/OpenSans-BoldItalic-webfont.svg
+128 silly gunzTarPerm modified mode [ 'doc/fonts/OpenSans-BoldItalic-webfont.svg', 436, 420 ]
+129 silly gunzTarPerm extractEntry doc/fonts/OpenSans-BoldItalic-webfont.woff
+130 silly gunzTarPerm modified mode [ 'doc/fonts/OpenSans-BoldItalic-webfont.woff', 436, 420 ]
+131 silly gunzTarPerm extractEntry doc/fonts/OpenSans-Italic-webfont.eot
+132 silly gunzTarPerm modified mode [ 'doc/fonts/OpenSans-Italic-webfont.eot', 436, 420 ]
+133 silly gunzTarPerm extractEntry doc/fonts/OpenSans-Italic-webfont.svg
+134 silly gunzTarPerm modified mode [ 'doc/fonts/OpenSans-Italic-webfont.svg', 436, 420 ]
+135 silly gunzTarPerm extractEntry doc/fonts/OpenSans-Italic-webfont.woff
+136 silly gunzTarPerm modified mode [ 'doc/fonts/OpenSans-Italic-webfont.woff', 436, 420 ]
+137 silly gunzTarPerm extractEntry doc/fonts/OpenSans-Bold-webfont.svg
+138 silly gunzTarPerm modified mode [ 'doc/fonts/OpenSans-Bold-webfont.svg', 436, 420 ]
+139 silly gunzTarPerm extractEntry doc/fonts/OpenSans-Light-webfont.svg
+140 silly gunzTarPerm modified mode [ 'doc/fonts/OpenSans-Light-webfont.svg', 436, 420 ]
+141 silly gunzTarPerm extractEntry doc/fonts/OpenSans-Light-webfont.woff
+142 silly gunzTarPerm modified mode [ 'doc/fonts/OpenSans-Light-webfont.woff', 436, 420 ]
+143 silly gunzTarPerm extractEntry doc/fonts/OpenSans-LightItalic-webfont.eot
+144 silly gunzTarPerm modified mode [ 'doc/fonts/OpenSans-LightItalic-webfont.eot', 436, 420 ]
+145 silly gunzTarPerm extractEntry doc/fonts/OpenSans-LightItalic-webfont.svg
+146 silly gunzTarPerm modified mode [ 'doc/fonts/OpenSans-LightItalic-webfont.svg', 436, 420 ]
+147 silly gunzTarPerm extractEntry doc/fonts/OpenSans-LightItalic-webfont.woff
+148 silly gunzTarPerm modified mode [ 'doc/fonts/OpenSans-LightItalic-webfont.woff', 436, 420 ]
+149 silly gunzTarPerm extractEntry doc/fonts/OpenSans-Regular-webfont.eot
+150 silly gunzTarPerm modified mode [ 'doc/fonts/OpenSans-Regular-webfont.eot', 436, 420 ]
+151 silly gunzTarPerm extractEntry doc/fonts/OpenSans-Regular-webfont.svg
+152 silly gunzTarPerm modified mode [ 'doc/fonts/OpenSans-Regular-webfont.svg', 436, 420 ]
+153 silly gunzTarPerm extractEntry doc/fonts/OpenSans-Regular-webfont.woff
+154 silly gunzTarPerm modified mode [ 'doc/fonts/OpenSans-Regular-webfont.woff', 436, 420 ]
+155 silly gunzTarPerm extractEntry doc/global.html
+156 silly gunzTarPerm modified mode [ 'doc/global.html', 436, 420 ]
+157 silly gunzTarPerm extractEntry doc/Param.html
+158 silly gunzTarPerm modified mode [ 'doc/Param.html', 436, 420 ]
+159 silly gunzTarPerm extractEntry doc/global.html#Message
+160 silly gunzTarPerm modified mode [ 'doc/global.html#Message', 436, 420 ]
+161 silly gunzTarPerm extractEntry doc/global.html#Pose
+162 silly gunzTarPerm modified mode [ 'doc/global.html#Pose', 436, 420 ]
+163 silly gunzTarPerm extractEntry doc/global.html#Service
+164 silly gunzTarPerm modified mode [ 'doc/global.html#Service', 436, 420 ]
+165 silly gunzTarPerm extractEntry doc/global.html#ServiceResponse
+166 silly gunzTarPerm modified mode [ 'doc/global.html#ServiceResponse', 436, 420 ]
+167 silly gunzTarPerm extractEntry doc/global.html#Topic
+168 silly gunzTarPerm modified mode [ 'doc/global.html#Topic', 436, 420 ]
+169 silly gunzTarPerm extractEntry doc/global.html#UrdfColor
+170 silly gunzTarPerm modified mode [ 'doc/global.html#UrdfColor', 436, 420 ]
+171 silly gunzTarPerm extractEntry doc/global.html#UrdfMaterial
+172 silly gunzTarPerm modified mode [ 'doc/global.html#UrdfMaterial', 436, 420 ]
+173 silly gunzTarPerm extractEntry doc/global.html#UrdfVisual
+174 silly gunzTarPerm modified mode [ 'doc/global.html#UrdfVisual', 436, 420 ]
+175 silly gunzTarPerm extractEntry doc/global.html#Vector3
+176 silly gunzTarPerm modified mode [ 'doc/global.html#Vector3', 436, 420 ]
+177 silly gunzTarPerm extractEntry doc/index.html
+178 silly gunzTarPerm modified mode [ 'doc/index.html', 436, 420 ]
+179 silly gunzTarPerm extractEntry doc/math_Pose.js.html
+180 silly gunzTarPerm modified mode [ 'doc/math_Pose.js.html', 436, 420 ]
+181 silly gunzTarPerm extractEntry doc/math_Quaternion.js.html
+182 silly gunzTarPerm modified mode [ 'doc/math_Quaternion.js.html', 436, 420 ]
+183 silly gunzTarPerm extractEntry doc/math_Transform.js.html
+184 silly gunzTarPerm modified mode [ 'doc/math_Transform.js.html', 436, 420 ]
+185 silly gunzTarPerm extractEntry doc/math_Vector3.js.html
+186 silly gunzTarPerm modified mode [ 'doc/math_Vector3.js.html', 436, 420 ]
+187 silly gunzTarPerm extractEntry doc/mixin.js.html
+188 silly gunzTarPerm modified mode [ 'doc/mixin.js.html', 436, 420 ]
+189 silly gunzTarPerm extractEntry doc/node_RosTCP.js.html
+190 silly gunzTarPerm modified mode [ 'doc/node_RosTCP.js.html', 436, 420 ]
+191 silly gunzTarPerm extractEntry doc/node_TopicStream.js.html
+192 silly gunzTarPerm modified mode [ 'doc/node_TopicStream.js.html', 436, 420 ]
+193 silly gunzTarPerm extractEntry doc/scripts/linenumber.js
+194 silly gunzTarPerm modified mode [ 'doc/scripts/linenumber.js', 436, 420 ]
+195 silly gunzTarPerm extractEntry doc/scripts/prettify/lang-css.js
+196 silly gunzTarPerm modified mode [ 'doc/scripts/prettify/lang-css.js', 436, 420 ]
+197 silly gunzTarPerm extractEntry doc/scripts/prettify/prettify.js
+198 silly gunzTarPerm modified mode [ 'doc/scripts/prettify/prettify.js', 436, 420 ]
+199 silly gunzTarPerm extractEntry doc/scripts/prettify/Apache-License-2.0.txt
+200 silly gunzTarPerm modified mode [ 'doc/scripts/prettify/Apache-License-2.0.txt', 436, 420 ]
+201 silly gunzTarPerm extractEntry doc/styles/jsdoc-default.css
+202 silly gunzTarPerm modified mode [ 'doc/styles/jsdoc-default.css', 436, 420 ]
+203 silly gunzTarPerm extractEntry doc/styles/prettify-jsdoc.css
+204 silly gunzTarPerm modified mode [ 'doc/styles/prettify-jsdoc.css', 436, 420 ]
+205 silly gunzTarPerm extractEntry doc/styles/prettify-tomorrow.css
+206 silly gunzTarPerm modified mode [ 'doc/styles/prettify-tomorrow.css', 436, 420 ]
+207 silly gunzTarPerm extractEntry doc/tf_TFClient.js.html
+208 silly gunzTarPerm modified mode [ 'doc/tf_TFClient.js.html', 436, 420 ]
+209 silly gunzTarPerm extractEntry doc/urdf_UrdfBox.js.html
+210 silly gunzTarPerm modified mode [ 'doc/urdf_UrdfBox.js.html', 436, 420 ]
+211 silly gunzTarPerm extractEntry doc/urdf_UrdfColor.js.html
+212 silly gunzTarPerm modified mode [ 'doc/urdf_UrdfColor.js.html', 436, 420 ]
+213 silly gunzTarPerm extractEntry doc/urdf_UrdfCylinder.js.html
+214 silly gunzTarPerm modified mode [ 'doc/urdf_UrdfCylinder.js.html', 436, 420 ]
+215 silly gunzTarPerm extractEntry doc/urdf_UrdfJoint.js.html
+216 silly gunzTarPerm modified mode [ 'doc/urdf_UrdfJoint.js.html', 436, 420 ]
+217 silly gunzTarPerm extractEntry doc/urdf_UrdfLink.js.html
+218 silly gunzTarPerm modified mode [ 'doc/urdf_UrdfLink.js.html', 436, 420 ]
+219 silly gunzTarPerm extractEntry doc/urdf_UrdfMaterial.js.html
+220 silly gunzTarPerm modified mode [ 'doc/urdf_UrdfMaterial.js.html', 436, 420 ]
+221 silly gunzTarPerm extractEntry doc/urdf_UrdfMesh.js.html
+222 silly gunzTarPerm modified mode [ 'doc/urdf_UrdfMesh.js.html', 436, 420 ]
+223 silly gunzTarPerm extractEntry doc/urdf_UrdfModel.js.html
+224 silly gunzTarPerm modified mode [ 'doc/urdf_UrdfModel.js.html', 436, 420 ]
+225 silly gunzTarPerm extractEntry doc/urdf_UrdfSphere.js.html
+226 silly gunzTarPerm modified mode [ 'doc/urdf_UrdfSphere.js.html', 436, 420 ]
+227 silly gunzTarPerm extractEntry doc/urdf_UrdfVisual.js.html
+228 silly gunzTarPerm modified mode [ 'doc/urdf_UrdfVisual.js.html', 436, 420 ]
+229 silly gunzTarPerm extractEntry misc/check.sh
+230 silly gunzTarPerm modified mode [ 'misc/check.sh', 509, 493 ]
+231 silly gunzTarPerm extractEntry misc/install.sh
+232 silly gunzTarPerm modified mode [ 'misc/install.sh', 509, 493 ]
+233 silly gunzTarPerm extractEntry src/RosLib.js
+234 silly gunzTarPerm modified mode [ 'src/RosLib.js', 436, 420 ]
+235 silly gunzTarPerm extractEntry src/RosLibNode.js
+236 silly gunzTarPerm modified mode [ 'src/RosLibNode.js', 436, 420 ]
+237 silly gunzTarPerm extractEntry src/RosLibBrowser.js
+238 silly gunzTarPerm modified mode [ 'src/RosLibBrowser.js', 436, 420 ]
+239 silly gunzTarPerm extractEntry src/mixin.js
+240 silly gunzTarPerm modified mode [ 'src/mixin.js', 436, 420 ]
+241 silly gunzTarPerm extractEntry src/core/Message.js
+242 silly gunzTarPerm modified mode [ 'src/core/Message.js', 436, 420 ]
+243 silly gunzTarPerm extractEntry src/core/Param.js
+244 silly gunzTarPerm modified mode [ 'src/core/Param.js', 436, 420 ]
+245 silly gunzTarPerm extractEntry src/core/Ros.js
+246 silly gunzTarPerm modified mode [ 'src/core/Ros.js', 436, 420 ]
+247 silly gunzTarPerm extractEntry src/core/Service.js
+248 silly gunzTarPerm modified mode [ 'src/core/Service.js', 436, 420 ]
+249 silly gunzTarPerm extractEntry src/core/ServiceRequest.js
+250 silly gunzTarPerm modified mode [ 'src/core/ServiceRequest.js', 436, 420 ]
+251 silly gunzTarPerm extractEntry src/core/ServiceResponse.js
+252 silly gunzTarPerm modified mode [ 'src/core/ServiceResponse.js', 436, 420 ]
+253 silly gunzTarPerm extractEntry src/core/SocketAdapter.js
+254 silly gunzTarPerm modified mode [ 'src/core/SocketAdapter.js', 436, 420 ]
+255 silly gunzTarPerm extractEntry src/core/Topic.js
+256 silly gunzTarPerm modified mode [ 'src/core/Topic.js', 436, 420 ]
+257 silly gunzTarPerm extractEntry src/core/index.js
+258 silly gunzTarPerm modified mode [ 'src/core/index.js', 436, 420 ]
+259 silly gunzTarPerm extractEntry src/util/shim/EventEmitter2.js
+260 silly gunzTarPerm modified mode [ 'src/util/shim/EventEmitter2.js', 436, 420 ]
+261 silly gunzTarPerm extractEntry src/util/shim/WebSocket.js
+262 silly gunzTarPerm modified mode [ 'src/util/shim/WebSocket.js', 436, 420 ]
+263 silly gunzTarPerm extractEntry src/util/shim/canvas.js
+264 silly gunzTarPerm modified mode [ 'src/util/shim/canvas.js', 436, 420 ]
+265 silly gunzTarPerm extractEntry src/util/shim/xmldom.js
+266 silly gunzTarPerm modified mode [ 'src/util/shim/xmldom.js', 436, 420 ]
+267 silly gunzTarPerm extractEntry src/actionlib/ActionClient.js
+268 silly gunzTarPerm modified mode [ 'src/actionlib/ActionClient.js', 436, 420 ]
+269 silly gunzTarPerm extractEntry src/actionlib/Goal.js
+270 silly gunzTarPerm modified mode [ 'src/actionlib/Goal.js', 436, 420 ]
+271 silly gunzTarPerm extractEntry src/actionlib/SimpleActionServer.js
+272 silly gunzTarPerm modified mode [ 'src/actionlib/SimpleActionServer.js', 436, 420 ]
+273 silly gunzTarPerm extractEntry src/actionlib/index.js
+274 silly gunzTarPerm modified mode [ 'src/actionlib/index.js', 436, 420 ]
+275 silly gunzTarPerm extractEntry src/node/RosTCP.js
+276 silly gunzTarPerm modified mode [ 'src/node/RosTCP.js', 436, 420 ]
+277 silly gunzTarPerm extractEntry src/node/TopicStream.js
+278 silly gunzTarPerm modified mode [ 'src/node/TopicStream.js', 436, 420 ]
+279 silly gunzTarPerm extractEntry src/tf/TFClient.js
+280 silly gunzTarPerm modified mode [ 'src/tf/TFClient.js', 436, 420 ]
+281 silly gunzTarPerm extractEntry src/tf/index.js
+282 silly gunzTarPerm modified mode [ 'src/tf/index.js', 436, 420 ]
+283 silly gunzTarPerm extractEntry src/urdf/UrdfBox.js
+284 silly gunzTarPerm modified mode [ 'src/urdf/UrdfBox.js', 436, 420 ]
+285 silly gunzTarPerm extractEntry src/urdf/UrdfCylinder.js
+286 silly gunzTarPerm modified mode [ 'src/urdf/UrdfCylinder.js', 436, 420 ]
+287 silly gunzTarPerm extractEntry src/urdf/UrdfJoint.js
+288 silly gunzTarPerm modified mode [ 'src/urdf/UrdfJoint.js', 436, 420 ]
+289 silly gunzTarPerm extractEntry src/urdf/UrdfLink.js
+290 silly gunzTarPerm modified mode [ 'src/urdf/UrdfLink.js', 436, 420 ]
+291 silly gunzTarPerm extractEntry src/urdf/UrdfMaterial.js
+292 silly gunzTarPerm modified mode [ 'src/urdf/UrdfMaterial.js', 436, 420 ]
+293 silly gunzTarPerm extractEntry src/urdf/UrdfColor.js
+294 silly gunzTarPerm modified mode [ 'src/urdf/UrdfColor.js', 436, 420 ]
+295 silly gunzTarPerm extractEntry src/urdf/UrdfModel.js
+296 silly gunzTarPerm modified mode [ 'src/urdf/UrdfModel.js', 436, 420 ]
+297 silly gunzTarPerm extractEntry src/urdf/UrdfSphere.js
+298 silly gunzTarPerm modified mode [ 'src/urdf/UrdfSphere.js', 436, 420 ]
+299 silly gunzTarPerm extractEntry src/urdf/UrdfTypes.js
+300 silly gunzTarPerm modified mode [ 'src/urdf/UrdfTypes.js', 436, 420 ]
+301 silly gunzTarPerm extractEntry src/urdf/UrdfVisual.js
+302 silly gunzTarPerm modified mode [ 'src/urdf/UrdfVisual.js', 436, 420 ]
+303 silly gunzTarPerm extractEntry src/urdf/index.js
+304 silly gunzTarPerm modified mode [ 'src/urdf/index.js', 436, 420 ]
+305 silly gunzTarPerm extractEntry src/urdf/UrdfMesh.js
+306 silly gunzTarPerm modified mode [ 'src/urdf/UrdfMesh.js', 436, 420 ]
+307 silly gunzTarPerm extractEntry src/math/Pose.js
+308 silly gunzTarPerm modified mode [ 'src/math/Pose.js', 436, 420 ]
+309 silly gunzTarPerm extractEntry src/math/Quaternion.js
+310 silly gunzTarPerm modified mode [ 'src/math/Quaternion.js', 436, 420 ]
+311 silly gunzTarPerm extractEntry src/math/Transform.js
+312 silly gunzTarPerm modified mode [ 'src/math/Transform.js', 436, 420 ]
+313 silly gunzTarPerm extractEntry src/math/Vector3.js
+314 silly gunzTarPerm modified mode [ 'src/math/Vector3.js', 436, 420 ]
+315 silly gunzTarPerm extractEntry src/math/index.js
+316 silly gunzTarPerm modified mode [ 'src/math/index.js', 436, 420 ]
+317 verbose write writing to /Users/alexmackinnon/projects/rover2016/control/node_modules/roslib/package.json
+318 info preinstall roslib@0.17.0
+319 verbose unsafe-perm in lifecycle false
+320 info roslib@0.17.0 Failed to exec preinstall script
+321 verbose unlock done using /Users/alexmackinnon/.npm/_locks/roslib-cee9bd94c405ede6.lock for /Users/alexmackinnon/projects/rover2016/control/node_modules/roslib
+322 verbose stack Error: roslib@0.17.0 preinstall: `sh misc/check.sh`
+322 verbose stack Exit status 1
+322 verbose stack     at EventEmitter.<anonymous> (/usr/local/lib/node_modules/npm/lib/utils/lifecycle.js:214:16)
+322 verbose stack     at emitTwo (events.js:87:13)
+322 verbose stack     at EventEmitter.emit (events.js:172:7)
+322 verbose stack     at ChildProcess.<anonymous> (/usr/local/lib/node_modules/npm/lib/utils/spawn.js:24:14)
+322 verbose stack     at emitTwo (events.js:87:13)
+322 verbose stack     at ChildProcess.emit (events.js:172:7)
+322 verbose stack     at maybeClose (internal/child_process.js:818:16)
+322 verbose stack     at Process.ChildProcess._handle.onexit (internal/child_process.js:211:5)
+323 verbose pkgid roslib@0.17.0
+324 verbose cwd /Users/alexmackinnon/projects/rover2016/control
+325 error Darwin 14.5.0
+326 error argv "/usr/local/bin/node" "/usr/local/bin/npm" "install" "roslib"
+327 error node v4.2.3
+328 error npm  v2.14.7
+329 error code ELIFECYCLE
+330 error roslib@0.17.0 preinstall: `sh misc/check.sh`
+330 error Exit status 1
+331 error Failed at the roslib@0.17.0 preinstall script 'sh misc/check.sh'.
+331 error This is most likely a problem with the roslib package,
+331 error not with npm itself.
+331 error Tell the author that this fails on your system:
+331 error     sh misc/check.sh
+331 error You can get their info via:
+331 error     npm owner ls roslib
+331 error There is likely additional logging output above.
+332 verbose exit [ 1, true ]
+333 verbose unbuild node_modules/roslib
+334 info preuninstall roslib@0.17.0
+335 info uninstall roslib@0.17.0
+336 verbose unbuild rmStuff roslib@0.17.0 from /Users/alexmackinnon/projects/rover2016/control/node_modules
+337 info postuninstall roslib@0.17.0
+338 silly gentlyRm /Users/alexmackinnon/projects/rover2016/control/node_modules/roslib is being purged from base /Users/alexmackinnon/projects/rover2016/control
+339 verbose gentlyRm don't care about contents; nuking /Users/alexmackinnon/projects/rover2016/control/node_modules/roslib
+340 silly vacuum-fs purging /Users/alexmackinnon/projects/rover2016/control/node_modules/roslib
+341 silly vacuum-fs removing /Users/alexmackinnon/projects/rover2016/control/node_modules
+342 silly vacuum-fs finished vacuuming up to /Users/alexmackinnon/projects/rover2016/control
