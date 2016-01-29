@@ -44,6 +44,21 @@ https://www.sparkfun.com/pages/xbee_guide
 
 
 ##LIDAR##
-[Lidar][https://github.com/alexmac131/rover2016/tree/master/images/LIDARMIRRORS.jpg]
+###GOALS###
 
-https://github.com/alexmac131/rover2016/tree/master/images
+
+###PARTS###
+* Time of Flight Laser (I2C)
+https://www.sparkfun.com/products/retired/13680
+* Mirrors
+* Motor
+* Linkage
+
+
+
+
+###What is LIDAR###
+
+
+![Lidar](https://github.com/alexmac131/rover2016/tree/master/images/LIDARMIRRORS.jpg)
+
