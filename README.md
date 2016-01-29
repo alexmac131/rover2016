@@ -26,9 +26,13 @@ https://www.adafruit.com/products/1438
 https://www.servocity.com/html/nomad_4wd_off-road_chassis.html#.VqvZkDYrKRs
 
 * XBee radio link 
-
+Xbee Radio Link Buyers Guide. 
+https://www.sparkfun.com/pages/xbee_guide
 
 * Wifi Network Shield or Wifi Dongle
 
+*MDF Board and other bits
 
-
+##Resources##
+Xbee Radio Link Buyers Guide. 
+https://www.sparkfun.com/pages/xbee_guide
