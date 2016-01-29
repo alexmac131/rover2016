@@ -13,8 +13,7 @@ This is basically version 3 with new physical hardware, new code and the introdu
 ##License:##
 
 The majority of this software is licensed in exchange for two liters
-of India Pale Ale, to be delivered at a neighborly bar, preferably
-without a a god-damned squary-stary-box.
+of India Pale Ale, to be delivered at a neighborly bar.
 
 ##Specifications:##
 
@@ -37,8 +36,14 @@ https://www.sparkfun.com/pages/xbee_guide
 
 * Wifi Network Shield or Wifi Dongle
 
-*MDF Board and other bits
+* MDF Board and other bits
 
 ##Resources##
 Xbee Radio Link Buyers Guide. 
 https://www.sparkfun.com/pages/xbee_guide
+
+
+##LIDAR##
+![][https://github.com/alexmac131/rover2016/tree/master/images/LIDARMIRRORS.jpg]
+
+https://github.com/alexmac131/rover2016/tree/master/images
