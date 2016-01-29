@@ -58,7 +58,5 @@ https://www.sparkfun.com/products/retired/13680
 
 
 ###What is LIDAR###
-
-
-![Lidar](https://github.com/alexmac131/rover2016/tree/master/images/LIDARMIRRORS.jpg)
+![Lidar](https://raw.githubusercontent.com/alexmac131/rover2016/master/images/LIDARMIRRORS.jpg)
 
