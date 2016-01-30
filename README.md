@@ -1,6 +1,7 @@
 #I2C Rover Multi Board Controls
 
 by Alex Mackinnon
+ ![I2C Multiboards ](https://raw.githubusercontent.com/alexmac131/rover2016/master/images/multiBoardProtoType.JPG)
 
 ##About the project:##
 I have been working with Arduino as a hobby for a few years now and wanted to something different and build something that starts to take the hardware and code to its very edge. 
@@ -58,5 +59,5 @@ https://www.sparkfun.com/products/retired/13680
 
 
 ###What is LIDAR###
-![Lidar](https://raw.githubusercontent.com/alexmac131/rover2016/master/images/LIDARMIRRORS.jpg)
+ ![Lidar](https://raw.githubusercontent.com/alexmac131/rover2016/master/images/LIDARMIRRORS.jpg)
 
