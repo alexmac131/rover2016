@@ -16,7 +16,14 @@ This is basically version 3 with new physical hardware, new code and the introdu
 The majority of this software is licensed in exchange for two liters
 of India Pale Ale, to be delivered at a neighborly bar.
 
-##Specifications:##
+##Specifications && Requirements:##
++ Create a vehicle 
++ Allow the vehicle to act autonomously when required.
++ Create a means to communicate between boards.
++ Allow quick adding of modules to the vehicle
++ Allow remove driving of the vehicle via any device that uses web browser
++ Build more advanced sensors 
++ Allow for mission planning and complete on board autonomous navigation
 
 
 
