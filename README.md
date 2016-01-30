@@ -8,15 +8,12 @@ I have been working with Arduino as a hobby for a few years now and wanted to so
 
 This is basically version 3 with new physical hardware, new code and the introduction of I2C and multi-unit control boards. Intentionally mixing different classes of Arduino boards, raspberry pi 1 & 2, particle IO boards and others.
 
-
-
-
 ##License:##
 
 The majority of this software is licensed in exchange for two liters
 of India Pale Ale, to be delivered at a neighborly bar.
 
-##Specifications && Requirements:##
+##Specifications##
 + Create a vehicle 
 + Allow the vehicle to act autonomously when required.
 + Create a means to communicate between boards.
@@ -27,7 +24,7 @@ of India Pale Ale, to be delivered at a neighborly bar.
 
 
 
-##Requirements:##
+##Requirements##
 
 * NodeJS
   https://nodejs.org/en/
@@ -52,7 +49,9 @@ https://www.sparkfun.com/pages/xbee_guide
 
 
 ##LIDAR##
+![Lidar](https://raw.githubusercontent.com/alexmac131/rover2016/master/images/timeofFlight.jpg)
 ###GOALS###
+To Build a home made Lidar that scans an arc in front of the rover generating a image of what is ahead.
 
 
 ###PARTS###
@@ -60,7 +59,7 @@ https://www.sparkfun.com/pages/xbee_guide
 https://www.sparkfun.com/products/retired/13680
 * Mirrors
 * Motor
-* Linkage
+* Linkage to move mirror one.
 
 
 
