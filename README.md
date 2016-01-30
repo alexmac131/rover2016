@@ -25,22 +25,16 @@ of India Pale Ale, to be delivered at a neighborly bar.
 
 
 ##Requirements##
-
 * NodeJS
   https://nodejs.org/en/
-
 * Adafrut MotorShield v2.4
 https://www.adafruit.com/products/1438
-
 * Nomad Rover Frame
 https://www.servocity.com/html/nomad_4wd_off-road_chassis.html#.VqvZkDYrKRs
-
 * XBee radio link 
 Xbee Radio Link Buyers Guide. 
 https://www.sparkfun.com/pages/xbee_guide
-
 * Wifi Network Shield or Wifi Dongle
-
 * MDF Board and other bits
 
 ##Resources##
@@ -48,8 +42,11 @@ Xbee Radio Link Buyers Guide.
 https://www.sparkfun.com/pages/xbee_guide
 
 
-##LIDAR##
+
+
+##Advanced Sensor Homemade LIDAR##
 ![Lidar](https://raw.githubusercontent.com/alexmac131/rover2016/master/images/timeofFlight.jpg)
+
 ###GOALS###
 To Build a home made Lidar that scans an arc in front of the rover generating a image of what is ahead.
 
@@ -57,12 +54,9 @@ To Build a home made Lidar that scans an arc in front of the rover generating a 
 ###PARTS###
 * Time of Flight Laser (I2C)
 https://www.sparkfun.com/products/retired/13680
-* Mirrors
+* Mirrors (2)
 * Motor
 * Linkage to move mirror one.
-
-
-
 
 ###What is LIDAR###
  ![Lidar](https://raw.githubusercontent.com/alexmac131/rover2016/master/images/LIDARMIRRORS.jpg)
