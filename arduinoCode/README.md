@@ -20,6 +20,15 @@ I have been working with Arduino as a hobby for a few years now and wanted to so
 
 
 ## Things to note ##
+I could likely include this code in seperate file as it is used as the basis for all motor commmands in all boards present and future board extensions.
+`
+Adafruit_MotorShield ROVERMOTORS = Adafruit_MotorShield();
+Adafruit_DCMotor *frontLeftWheel = ROVERMOTORS.getMotor(1);
+Adafruit_DCMotor *frontRightWheel = ROVERMOTORS.getMotor(2);
+Adafruit_DCMotor *rearLeftWheel = ROVERMOTORS.getMotor(3);
+Adafruit_DCMotor *rearRightWheel = ROVERMOTORS.getMotor(4);
+Adafruit_DCMotor *motors[4] = { frontLeftWheel,  frontRightWheel, rearLeftWheel   , rearRightWheel    };
+`
 
 ## Example code comparison ##
 
