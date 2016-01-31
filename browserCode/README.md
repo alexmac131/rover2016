@@ -1,7 +1,6 @@
-#I2C Rover Multi Board Controls
-
+#Browser Vehicle controls#
 by Alex Mackinnon
- ![I2C Multiboards ](https://raw.githubusercontent.com/alexmac131/rover2016/master/images/multiBoardProtoType.JPG)
+
 
 
 ##Browser UI##
@@ -18,7 +17,7 @@ I have been working with Arduino as a hobby for a few years now and wanted to so
 
 I wish to take various data end points and display them to a browser available in all devices.  As well as control and drive the packages on the vehicle itself. In some ways changing the display.
 
-To sweep in a defined arc in front of the rover with a ultra sonic range sensor.  The data is kept in the control board until a sweep is complete, transmitted externally to other systems. Given options such as miniumn range sending control messages to the motor control system and set control flags.  The flags will set a stop message and if the stop condition clears also transmit a clear message.
+To sweep in a defined arc in front of the rover with a ultra sonic range sensor.  The data is kept in the control board until a sweep is complete, transmitted externally to other systems. Given options such as minimum range sending control messages to the motor control system and set control flags.  The flags will set a stop message and if the stop condition clears also transmit a clear message.
 
 
 ##License:##
