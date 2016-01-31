@@ -22,6 +22,16 @@ I have been working with Arduino as a hobby for a few years now and wanted to so
 ## Things to note ##
 I could likely include this code in seperate file as it is used as the basis for all motor commmands in all boards present and future board extensions.
 ```
+#include <Adafruit_MotorShield.h>
+.
+.
+.
+#define I2C_ADDRESS_MOTOR 0x8
+#define I2C_ADDRESS_ME 0x9
+#define I2C_AdafruitMotorShield 0x60
+.
+.
+.
 Adafruit_MotorShield ROVERMOTORS = Adafruit_MotorShield();
 Adafruit_DCMotor *frontLeftWheel = ROVERMOTORS.getMotor(1);
 Adafruit_DCMotor *frontRightWheel = ROVERMOTORS.getMotor(2);
