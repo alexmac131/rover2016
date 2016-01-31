@@ -48,8 +48,8 @@ https://www.sparkfun.com/pages/xbee_guide
 		<td><img src="https://raw.githubusercontent.com/alexmac131/rover2016/master/images/sonarRendered.png"></td>
 	</tr>
 	<tr>	
-		<td>c</td>
-		<td>d</td>
+		<td colspan="2"><img src="https://raw.githubusercontent.com/alexmac131/NodeXBeeRover/master/images/nodeRoverControls.jpg"></td>
+		
 		
 	</tr>
 </table>
