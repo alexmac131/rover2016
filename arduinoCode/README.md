@@ -1,15 +1,9 @@
-#I2C Rover Multi Board Controls
-
+#I2C Rover Multi Board Controls 
 by Alex Mackinnon
- ![I2C Multiboards ](https://raw.githubusercontent.com/alexmac131/rover2016/master/images/multiBoardProtoType.JPG)
 
-##About the project:##
+#Arduino I2C between Arduino Mega, Arduino Leonardo and a adafruit motor shield v2.3:#
 I have been working with Arduino as a hobby for a few years now and wanted to something different and build something that starts to take the hardware and code to its very edge. 
-
-This is basically version 3 with new physical hardware, new code and the introduction of I2C and multi-unit control boards. Intentionally mixing different classes of Arduino boards, raspberry pi 1 & 2, particle IO boards and others.
-
-##License:##
-
+###License:###
 The majority of this software is licensed in exchange for two liters
 of India Pale Ale, to be delivered at a neighborly bar.
 
