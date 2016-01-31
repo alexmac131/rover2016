@@ -32,7 +32,7 @@ I could likely include this code in seperate file as it is used as the basis for
 .
 .
 .
-Adafruit_MotorShield ROVERMOTORS = Adafruit_MotorShield();
+Adafruit_MotorShield ROVERMOTORS = Adafruit_MotorShield(I2C_AdafruitMotorShield);
 Adafruit_DCMotor *frontLeftWheel = ROVERMOTORS.getMotor(1);
 Adafruit_DCMotor *frontRightWheel = ROVERMOTORS.getMotor(2);
 Adafruit_DCMotor *rearLeftWheel = ROVERMOTORS.getMotor(3);
