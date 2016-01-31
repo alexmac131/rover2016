@@ -42,6 +42,17 @@ Xbee Radio Link Buyers Guide.
 https://www.sparkfun.com/pages/xbee_guide
 
 ##Sonar Sweep##
+<table>
+	<tr>
+		<td>a</td>
+		<td>b</td>
+	</tr>
+	<tr>	
+		<td>c</td>
+		<td>d</td>
+		
+	</tr>
+</table>
 ##Goals##
 To sweep in a defined arc in front of the rover with a ultra sonic range sensor.  The data is kept in the control board until a sweep is complete, transmitted externally to other systems. Given options such as miniumn range sending control messages to the motor control system and set control flags.  The flags will set a stop message and if the stop condition clears also transmit a clear message.
 
