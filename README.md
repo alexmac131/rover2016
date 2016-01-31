@@ -85,3 +85,4 @@ https://www.sparkfun.com/products/retired/13680
 ---
 ##Motor XBee Control##
 ![Motor Stack](https://raw.githubusercontent.com/alexmac131/rover2016/master/images/MotorStack.JPG)	
+![Motor Stack](https://raw.githubusercontent.com/alexmac131/rover2016/master/images/motorControllers.jpg)	
