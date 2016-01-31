@@ -15,8 +15,8 @@ I have been working with Arduino as a hobby for a few years now and wanted to so
 
 
 ## Issues found ##
-+Attempting to send I2C to a middle device cause a lock up. Which means instead of sending a command to one board and then another nested I2C command. 
-+Mutlipul Pingers with the servo on cause a power brownout. So ideally you should release attach servo as it sweeps and takes range readings.
+1. Attempting to send I2C to a middle device cause a lock up. Which means instead of sending a command to one board and then another nested I2C command. 
+2. Mutlipul Pingers with the servo on cause a power brownout. So ideally you should release attach servo as it sweeps and takes range readings.
 
 
 ## Things to note ##
