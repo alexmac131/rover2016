@@ -8,6 +8,7 @@
 #define SERVOPIN       9
 #define I2C_ADDRESS_MOTOR 0x8
 #define I2C_ADDRESS_ME 0x9
+#define I2C_AdafruitMotorShield 0x60
 #define serverPosAngle 30
 #define serverPosCentre 90
 #define minRange  20
@@ -16,7 +17,7 @@ bool frontBarrier = false;
 bool sweepBarrier = false;
 bool debug = true;
 
-Adafruit_MotorShield ROVERMOTORS = Adafruit_MotorShield();
+Adafruit_MotorShield ROVERMOTORS = Adafruit_MotorShield(I2C_AdafruitMotorShield);
 Adafruit_DCMotor *frontLeftWheel = ROVERMOTORS.getMotor(1);
 Adafruit_DCMotor *frontRightWheel = ROVERMOTORS.getMotor(2);
 Adafruit_DCMotor *rearLeftWheel = ROVERMOTORS.getMotor(3);
@@ -93,13 +94,13 @@ void sendRadarData (unsigned int data[]) {
    Wire.write("radar,");
    int steps = (((serverPosCentre  + serverPosAngle)  -   (serverPosCentre - serverPosAngle)) / 5) + 1 ;
    for (int c = 0; c < steps; c++) {
-     Serial.println (data[c]);
-    Wire.write(data[c]);
-    if (c < steps) {
-       Wire.write(",");
-    }  
+      Serial.println (data[c]);
+      Wire.write(data[c]);
+      if (c < steps) {
+        Wire.write(",");
+      }  
    }
-  Wire.endTransmission();
+   Wire.endTransmission();
 }
 
 void allStop (int range, String Whom) {
