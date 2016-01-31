@@ -44,8 +44,8 @@ https://www.sparkfun.com/pages/xbee_guide
 ##Sonar Sweep##
 <table>
 	<tr>
-		<td>![](https://raw.githubusercontent.com/alexmac131/rover2016/master/images/timeofFlight.jpg)</td>
-		<td>![](https://raw.githubusercontent.com/alexmac131/rover2016/master/images/timeofFlight.jpg)</td>
+		<td><img src="https://raw.githubusercontent.com/alexmac131/rover2016/master/images/timeofFlight.jpg"></td>
+		<td><img src="https://raw.githubusercontent.com/alexmac131/rover2016/master/images/timeofFlight.jpg"></td>
 	</tr>
 	<tr>	
 		<td>c</td>
