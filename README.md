@@ -63,6 +63,9 @@ To sweep in a defined arc in front of the rover with a ultra sonic range sensor.
 * Arduino (Leonardo in this case)
 * breadboard power strip (Broken off a breadboard)
 
+
+
+---
 ##Advanced Sensor Homemade LIDAR##
 ![Lidar](https://raw.githubusercontent.com/alexmac131/rover2016/master/images/timeofFlight.jpg)
 
@@ -79,4 +82,6 @@ https://www.sparkfun.com/products/retired/13680
 
 ###What is LIDAR###
  ![Lidar](https://raw.githubusercontent.com/alexmac131/rover2016/master/images/LIDARMIRRORS.jpg)
-
+---
+##Motor XBee Control##
+![Motor Stack](https://raw.githubusercontent.com/alexmac131/rover2016/master/images/MotorStack.JPG)	
