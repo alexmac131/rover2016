@@ -1,26 +1,22 @@
 #I2C Rover Multi Board Controls 
 by Alex Mackinnon
 
-#Arduino I2C between Arduino Mega, Arduino Leonardo and a adafruit motor shield v2.3:#
-I have been working with Arduino as a hobby for a few years now and wanted to something different and build something that starts to take the hardware and code to its very edge. 
 ###License:###
 The majority of this software is licensed in exchange for two liters
 of India Pale Ale, to be delivered at a neighborly bar.
 
+
+##Arduino I2C between Arduino Mega, Arduino Leonardo,Adafruit motor shield:##
+I have been working with Arduino as a hobby for a few years now and wanted to something different and build something that starts to take the hardware and code to its very edge.  Here we will document the process of the various boards communicating with the vehicle motor controls.
+	* Arduino Mega I2C address 0x8
+	* Arduino Leonardo address 0x9
+	* Adafruit MotorShield default address 0x60(1)
+
 ##Specifications##
-+ Create a vehicle 
-+ Allow the vehicle to act autonomously when required.
-+ Create a means to communicate between boards.
-+ Allow quick adding of modules to the vehicle
-+ Allow remove driving of the vehicle via any device that uses web browser
-+ Build more advanced sensors 
-+ Allow for mission planning and complete on board autonomous navigation
 
 
 
 ##Requirements##
-* NodeJS
-  https://nodejs.org/en/
 * Adafrut MotorShield v2.4
 https://www.adafruit.com/products/1438
 * Nomad Rover Frame
@@ -59,23 +55,6 @@ To sweep in a defined arc in front of the rover with a ultra sonic range sensor.
 
 
 
----
-##Advanced Sensor Homemade LIDAR##
-![Lidar](https://raw.githubusercontent.com/alexmac131/rover2016/master/images/timeofFlight.jpg)
-
-###GOALS###
-To Build a home made Lidar that scans an arc in front of the rover generating a image of what is ahead.
-
-
-###PARTS###
-* Time of Flight Laser (I2C)
-https://www.sparkfun.com/products/retired/13680
-* Mirrors (2)
-* Motor
-* Linkage to move mirror one.
-
-###What is LIDAR###
- ![Lidar](https://raw.githubusercontent.com/alexmac131/rover2016/master/images/LIDARMIRRORS.jpg)
 ---
 ##Motor XBee Control##
 <table>
