@@ -44,8 +44,8 @@ https://www.sparkfun.com/pages/xbee_guide
 ##Sonar Sweep##
 <table>
 	<tr>
-		<td><img src="https://raw.githubusercontent.com/alexmac131/rover2016/master/images/timeofFlight.jpg"></td>
-		<td><img src="https://raw.githubusercontent.com/alexmac131/rover2016/master/images/timeofFlight.jpg"></td>
+		<td><img src="https://raw.githubusercontent.com/alexmac131/rover2016/master/images/Pinger.JPG"></td>
+		<td><img src="https://raw.githubusercontent.com/alexmac131/rover2016/master/images/sonarRendered.png"></td>
 	</tr>
 	<tr>	
 		<td>c</td>
