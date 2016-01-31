@@ -84,5 +84,13 @@ https://www.sparkfun.com/products/retired/13680
  ![Lidar](https://raw.githubusercontent.com/alexmac131/rover2016/master/images/LIDARMIRRORS.jpg)
 ---
 ##Motor XBee Control##
+
+###GOALS###
+
+
+###PARTS###
+
+
+
 ![Motor Stack](https://raw.githubusercontent.com/alexmac131/rover2016/master/images/MotorStack.JPG)	
 ![Motor Stack](https://raw.githubusercontent.com/alexmac131/rover2016/master/images/motorControllers.jpg)	
