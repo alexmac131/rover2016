@@ -56,7 +56,7 @@ The core difference here is how the motors are controlled by the CoreMotorXbee s
 ##Specifications##
 
 ___
-## Subprojects ## 
+##Subprojects## 
 
 + [Arduino I2C Code](https://github.com/alexmac131/rover2016/tree/master/arduinoCode)
 + [Browser Code](https://github.com/alexmac131/rover2016/tree/master/browserCode)
