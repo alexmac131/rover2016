@@ -50,9 +50,19 @@ Adafruit_DCMotor *motors[4] = { frontLeftWheel,  frontRightWheel, rearLeftWheel 
 ```
 
 ## Example code comparison ##
+The core difference here is how the motors are controlled by the CoreMotorXbee sketch.  The key difference is the use of pointers and arrays that diverge from the examples on line in very signifigant manner.
 
 
 ##Specifications##
 
+___
+## Subprojects ## 
+
++ [Arduino I2C Code](https://github.com/alexmac131/rover2016/tree/master/arduinoCode)
++ [Browser Code](https://github.com/alexmac131/rover2016/tree/master/browserCode)
++ [Misc Notes](https://github.com/alexmac131/rover2016/tree/master/documentation)
++ [NodeJS Server](https://github.com/alexmac131/rover2016/tree/master/nodeJSServer)
+
+---
 
 
