@@ -6,8 +6,9 @@
 #define NUMPIXELS      1
 #define I2C_ADDRESS_ME 0x8
 #define MOTORSHIELD  0x60
+#define I2C_AdafruitMotorShield 0x60
 
-Adafruit_MotorShield ROVERMOTORS = Adafruit_MotorShield( );
+Adafruit_MotorShield ROVERMOTORS = Adafruit_MotorShield(I2C_AdafruitMotorShield);
 Adafruit_DCMotor *frontLeftWheel = ROVERMOTORS.getMotor(1);
 Adafruit_DCMotor *frontRightWheel = ROVERMOTORS.getMotor(2);
 Adafruit_DCMotor *rearLeftWheel = ROVERMOTORS.getMotor(3);
