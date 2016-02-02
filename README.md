@@ -1,4 +1,4 @@
-#I2C Rover Multi Board Controls
+#Rover Build - I2C - MultiBoard - Homemade Lidar
 
 by Alex Mackinnon
  ![I2C Multiboards ](https://raw.githubusercontent.com/alexmac131/rover2016/master/images/multiBoardProtoType.JPG)
