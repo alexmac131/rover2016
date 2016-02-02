@@ -16,7 +16,7 @@ of India Pale Ale, to be delivered at a neighborly bar.
 
 
 ___
-##Subprojects## 
+##Subprojects 
 
 + [Arduino I2C Code](https://github.com/alexmac131/rover2016/tree/master/arduinoCode)
 + [Browser Code](https://github.com/alexmac131/rover2016/tree/master/browserCode)

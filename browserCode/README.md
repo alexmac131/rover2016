@@ -44,7 +44,7 @@ https://www.sparkfun.com/pages/xbee_guide
 
 
 ___
-## Subprojects ## 
+##Subprojects
 
 + [Arduino I2C Code](https://github.com/alexmac131/rover2016/tree/master/arduinoCode)
 + [Browser Code](https://github.com/alexmac131/rover2016/tree/master/browserCode)
