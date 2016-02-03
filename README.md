@@ -13,6 +13,7 @@ My [first project](https://github.com/alexmac131/NodeXBeeRover) I was at a hacka
 The [second project](https://github.com/alexmac131/Ulysses-Explorer-) was again at a hackathon the following year and clearly I had bit off more than I could chew and made the mistake of traveling and having to do the social game at the same time.  Also mixing up serial baud rates between nodejs server and robot did not help.
 
 In this *third* project it is my intent to create a platform where I have a basic drive set that accepts commands but also allows for addition of hardware modules in a near [Ros](http://wiki.ros.org/ROS/Introduction) programming format.  It is infact going to be ROS but I am pretty sure my first attempt at ROS will break a few rules.
+
 ___
 ##Subprojects
 
