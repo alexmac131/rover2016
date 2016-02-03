@@ -8,6 +8,11 @@ I have been working with Arduino as a hobby for a few years now and wanted to so
 
 This is basically version 3 with new physical hardware, new code and the introduction of I2C and multi-unit control boards. Intentionally mixing different classes of Arduino boards, raspberry pi 1 & 2, particle IO boards and others.
 
+My [first project](https://github.com/alexmac131/NodeXBeeRover) I was at a hackathon and decided to code up a browser based control system that talked to a NodeJs AJAX service.  This in turn talked through nodeJS serial through a radio link to my rover's xbee transceiver and it in turn used Arduino code written in a mix of C, C++ and Java (Yes it seems odd, I think so too). 
+
+The [second project](https://github.com/alexmac131/Ulysses-Explorer-) was again at a hackathon the following year and clearly I had bit off more than I could chew and made the mistake of traveling and having to do the social game at the same time.  Also mixing up serial baud rates between nodejs server and robot did not help.
+
+In this *third* project it is my intent to create a platform where I have a basic drive set that accepts commands but also allows for addition of hardware modules in a near [Ros](http://wiki.ros.org/ROS/Introduction) programming format.  It is infact going to be ROS but I am pretty sure my first attempt at ROS will break a few rules.
 ___
 ##Subprojects
 
