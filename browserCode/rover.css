@@ -130,6 +130,30 @@
 	float:right;
 }
 
+.roverCssDefault {
+	position: absolute;
+	width: 550px; 
+	height:400px;
+    visibility:visible;
+    z-index: 0;
+    top:50px;
+    right:1px;   
+}
+
+.roverCss {
+	position: absolute;
+
+	z-index: 3;
+    top: 1;
+    right: 1;
+   	width: 550px; 
+	height:400px;
+    visibility:visible;
+    z-index: 0;
+    top:50px;
+    right:1px;   
+}
+
 
 
 

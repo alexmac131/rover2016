@@ -4,7 +4,7 @@ by Alex Mackinnon
  ![I2C Multiboards ](https://raw.githubusercontent.com/alexmac131/rover2016/master/images/multiBoardProtoType.JPG)
 
 ##About the project:##
-I have been working with Arduino as a hobby for a few years now and wanted to something different and build something that starts to take the hardware and code to its very edge. 
+This project involves the creation of a experimental platform with scalable processing, sensors and mission sets. I have been working with Arduino as a hobby for a few years now and wanted to something different and build something that starts to take the hardware and code to its very edge. 
 
 This is basically version 3 with new physical hardware, new code and the introduction of I2C and multi-unit control boards. Intentionally mixing different classes of Arduino boards, raspberry pi 1 & 2, particle IO boards and others.
 
@@ -14,7 +14,7 @@ The [second project](https://github.com/alexmac131/Ulysses-Explorer-) was again 
 
 In this *third* project it is my intent to create a platform where I have a basic drive set that accepts commands but also allows for addition of hardware modules in a near [Ros](http://wiki.ros.org/ROS/Introduction) programming format.  It is infact going to be ROS but I am pretty sure my first attempt at ROS will break a few rules.
 
-___
+
 ##Subprojects
 
 + [Arduino I2C Code](https://github.com/alexmac131/rover2016/tree/master/arduinoCode)
@@ -22,7 +22,10 @@ ___
 + [Misc Notes](https://github.com/alexmac131/rover2016/tree/master/documentation)
 + [NodeJS Server](https://github.com/alexmac131/rover2016/tree/master/nodeJSServer)
 
----
+##To Build Software Server Side
+
+##To Build Arduino (2 board example)
+
 
 ##License:##
 

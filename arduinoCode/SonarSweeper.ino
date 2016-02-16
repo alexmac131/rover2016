@@ -47,7 +47,9 @@ void radarSweep () {
   for(int pos = serverPosCentre - serverPosAngle ; pos <= (serverPosCentre + serverPosAngle); pos += 5) {                  
     primarySweep.write(pos);   
     delay(45);
+    primarySweep.detach();
     RangeArray[count]  = pingArea (1);
+    primarySweep.attach(SERVOPIN);
     if (RangeArray[count] == -1 ) {
         sweepBarrier = true;
         currentSweepBarrier = true;
@@ -75,9 +77,9 @@ void radarSweep () {
     delay(80);
   }     
   if (currentSweepBarrier == false &&  sweepBarrier == true ) {
-      allClear();
-      sweepBarrier = false;
-      currentSweepBarrier = false;
+    allClear();
+    sweepBarrier = false;
+    currentSweepBarrier = false;
   }
   primarySweep.write(serverPosCentre - serverPosAngle);
   delay(40);
@@ -90,17 +92,17 @@ long microsecondsToCentimeters(long microseconds){
 
 void sendRadarData (unsigned int data[]) {
   Serial.println();
-   Wire.beginTransmission(I2C_ADDRESS_MOTOR); 
-   Wire.write("radar,");
-   int steps = (((serverPosCentre  + serverPosAngle)  -   (serverPosCentre - serverPosAngle)) / 5) + 1 ;
-   for (int c = 0; c < steps; c++) {
-      Serial.println (data[c]);
-      Wire.write(data[c]);
-      if (c < steps) {
-        Wire.write(",");
-      }  
-   }
-   Wire.endTransmission();
+  Wire.beginTransmission(I2C_ADDRESS_MOTOR); 
+  Wire.write("radar,");
+  int steps = (((serverPosCentre  + serverPosAngle)  -   (serverPosCentre - serverPosAngle)) / 5) + 1 ;
+  for (int c = 0; c < steps; c++) {
+    Serial.println (data[c]);
+    Wire.write(data[c]);
+    if (c < steps) {
+      Wire.write(",");
+    }  
+  }
+  Wire.endTransmission();
 }
 
 void allStop (int range, String Whom) {
@@ -125,18 +127,18 @@ void wheelSingle () {
 
 void calibrateServo () {
   Serial.println ("Delay to allow opening console");
-  delay (5000);
+  delay (2000);
   int checkSpots [3] = { 45, 90, 135};
   for (int check = 0; check < 3; check++) { 
     Serial.println ("Check " + String(check) + " angle of servo" + String(checkSpots [check]));
     primarySweep.write(checkSpots[check]); 
-    delay (2000);
+    delay (1000);
   }
 }
   
 unsigned  int pingArea(int pinger) {
   	long duration, distance;
-        int lookFor,trigPin, echoPin;
+    int lookFor,trigPin, echoPin;
   	String Whom;	
   
   	if (pinger == 1) {
@@ -157,28 +159,27 @@ unsigned  int pingArea(int pinger) {
   	delayMicroseconds(20); 
   	// look with eyes
   	digitalWrite(trigPin, HIGH);
-    	delayMicroseconds(lookFor);
-    	digitalWrite(trigPin, LOW);
+    delayMicroseconds(lookFor);
+    digitalWrite(trigPin, LOW);
     
-    	// see the sonic reflection
-        pinMode(echoPin, INPUT);  // listen
-    	duration = pulseIn(echoPin, HIGH);
-    	distance = microsecondsToCentimeters(duration);
-        Serial.println("Sonar range for " + Whom + " " + distance);
-    	if (distance < minRange ) {
-    		if (debug) { 
-    	            Serial.println ("Front sonic distance is " + String(distance) + Whom);
-    		}
-                allStop(distance, Whom);
-    		Wire.beginTransmission(I2C_ADDRESS_MOTOR); 
-      	        Wire.write('S');        // send stop code
-      	        Wire.endTransmission();  
+    // see the sonic reflection
+    pinMode(echoPin, INPUT);  // listen
+    duration = pulseIn(echoPin, HIGH);
+    distance = microsecondsToCentimeters(duration);
+    Serial.println("Sonar range for " + Whom + " " + distance);
+    if (distance < minRange ) {
+    	if (debug) { 
+    	   Serial.println ("Front sonic distance is " + String(distance) + Whom);
+    	}
+      allStop(distance, Whom);
+    	Wire.beginTransmission(I2C_ADDRESS_MOTOR); 
+      	 Wire.write('S');        // send stop code
+      Wire.endTransmission();  
   		return distance;
-    	}
-    	else  {
-    		return distance;
-    	}
-       
+    }
+    else  {
+    	return distance;
+    }   
   }
 
 void  allClear () {
